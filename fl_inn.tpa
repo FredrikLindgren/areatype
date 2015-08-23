@@ -24,7 +24,7 @@
 
 //add compatibility with CA
 
-OUTER_SPRINT fl#areatype#inn#version = "1.0.0"
+OUTER_SPRINT fl#areatype#inn#version "1.0.0"
 
 DEFINE_PATCH_FUNCTION fl#areatype#inn#write_area_type
   INT_VAR
@@ -111,7 +111,7 @@ BEGIN
 END //DEFINE_ACTION_FUNCTION
 
 ACTION_IF ENGINE_IS ~soa tob bgee bg2ee~ BEGIN
-  LAF fl#inn_add_area_type
+  LAF fl#areatype#inn#add_area_type
     RET
       FL_INN
   END
