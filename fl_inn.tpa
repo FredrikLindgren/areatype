@@ -52,7 +52,7 @@ BEGIN
    */
   ACTION_FOR_EACH area IN
     /*Bonehill:*/ bh0107 bh0120 bh0123 bh0115 bh2020 bh2024
-    /*Aran Whitehand:*/ "c-ar01" "c-ar02" "c-ar03"
+    /*Aran Whitehand:*/ "c-ar01" /*"c-ar02" "c-ar03"*/
     /*TDD:*/ arpo06 arpo07 dd0118 dd0119 dd1008 dd1008b dd3302 dd3334 dd3335
     /*RoT:*/ ra3901 ra5104 ra5105 rr3104 rr3105 rr3117 rr3118 rr3305 rr3312
     /*Undying:*/ cm7000 cm7100
