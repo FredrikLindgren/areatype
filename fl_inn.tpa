@@ -79,9 +79,11 @@ BEGIN
                ar0514 ar0515 ar0704 ar0709 ar0712 ar1105 ar1602 ar2010 ar2202
                ar2203 ar5003 ar5501
     BEGIN
-      COPY_EXISTING "%area%.are" override
-        LPF fl#areatype#inn#write_area_type END
-      BUT_ONLY
+      ACTION_IF FILE_EXISTS_IN_GAME "%area%.are" BEGIN
+        COPY_EXISTING "%area%.are" override
+          LPF fl#areatype#inn#write_area_type END
+        BUT_ONLY
+      END
     END
   END
 
